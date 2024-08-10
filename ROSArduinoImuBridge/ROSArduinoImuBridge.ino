@@ -163,7 +163,7 @@ int runCommand()
 void setup()
 {
   Serial.begin(BAUDRATE);
-  Serial.println("Starting ROSArduinoBridge");
+  // Serial.println("Starting ROSArduinoBridge");
 
 
   setup_imu();
@@ -179,7 +179,7 @@ void loop()
 
     // Read the next character
     chr = Serial.read();
-    Serial.println("command received" + String(chr));
+    // Serial.println("command received" + String(chr));
     // Terminate a command with a CR
     if (chr == 13)
     {
